@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>Sandra's profile</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for sidebars -->
+  <link href="./assests/sidebars.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="home" viewBox="0 0 16 16">
+      <path
+        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+    </symbol>
+    <symbol id="speedometer2" viewBox="0 0 16 16">
+      <path
+        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+      <path fill-rule="evenodd"
+        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+    </symbol>
+    <symbol id="table" viewBox="0 0 16 16">
+      <path
+        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+    </symbol>
+    <symbol id="grid" viewBox="0 0 16 16">
+      <path
+        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+    </symbol>
+  </svg>
+
+  <main>
+
+    <div class="d-flex flex-column bg-light" style="width: 4.5rem;">
+
+      <a class=" d-block p-3 link-dark text-decoration-none" title="My profile" id="MyProfile" data-bs-toggle="tooltip"
+        data-bs-placement="right">
+        <i class="far fa-user-circle fa-3x" width="40" height="32"></i>
+        <span class="visually-hidden">My profile icon only</span>
+      </a>
+
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+
+        <li class="nav-item" id="AboutMe" onclick="myFunction()">
+          <!--  -->
+          <button type="button" id="AboutMeButton" class="nav-link active py-3 border-bottom" title="About me">
+            <i class="fas fa-user-md fa-3x" width="40" height="32"></i>
+            <!-- <svg class="bi" width="24" height="24">
+              <use xlink:href="#people-circle" />
+            </svg> -->
+          </button>
+        </li>
+
+        <li>
+          <button type="button" id="MyWork" class="nav-link py-3 border-bottom" title="My Work">
+            <i class="fas fa-radiation fa-3x" width="36" height="28"></i>
+        </button>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Dashboard" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#speedometer2" />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Orders" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#table" />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Products" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#grid" />
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="dropdown border-top">
+        <a href="#"
+          class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+          id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="container" id="container1" style="width: 100%; margin: 10px;">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              About me
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>I am a mexican citizen.</strong><br>
+              Born in Mexico City.<br>
+              I have lived in Mexico City, Irapuato and Monterrey.<br>
+              Love tortoises, watching TV and learning.<br><br>
+              <div class="card" style="width: 18rem;">
+                <img src="./images/Foto_SIPA.jpg" class="card-img-top" alt="My photo">
+                <div class="card-body">
+                  <p class="card-text"> Radiation Oncologist.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              My current positions and training
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>My current positions</strong><br>
+              <strong><i>Since 2018.</i></strong> Radiation Oncologist physician. Radiation Oncology Department.
+              National Cancer Institute, Mexico City.<br>
+              <strong><i>Since 2018.</i></strong> Radiation Oncologist physician. Radiation Oncology Department.
+              National Institute of Medical Science and Nutrition Salvador Zubiran, Mexico City.<br>
+              <strong><i>Since 2019.</i></strong> Member of the Mexican Board of Certification in Radiotherapy.<br>
+              <strong><i>Since 2021.</i></strong> Member of the Mexican Society of Radiation Oncologists.<br><br>
+              <strong>My current training</strong><br>
+              <strong><i>Since 2019</i></strong> International Master in Interventional Advanced Radiation Oncology.
+              Spanish Society of Radiation Oncology. Francisco de Vitoria University.<br>
+              <strong><i>Since 2020</i></strong> Master in Educational Technology. Monterrey Institute of Technology and
+              Higher Education, Monterrey, Nuevo León<br>
+              <strong><i>Since 2021</i></strong> Tecnológico de Monterrey Coding Boot Camp<br>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Previous education and training
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong><i>2000-2003.</i></strong> Bicultural High School Program Monterrey Institute of Technology and
+              Higher Education. Irapuato, Guanajuato<br>
+              <strong><i>2003-2004.</i></strong> Basic Medical Science. Ignacio A. Santos School of Medicine, Monterrey
+              Institute of Technology and Higher Education, Mexico City<br>
+              <strong><i>2005-2006.</i></strong> Basic Clinical Sciences. Ignacio A. Santos School of Medicine,
+              Monterrey Institute of Technology and Higher Education, Monterrey, Nuevo León<br>
+              <strong><i>2007-2008.</i></strong> Rotating Internship Year National Institute of Medical Science and
+              Nutrition Salvador Zubiran, Mexico City Medica Sur Hospital, Mexico City. Gynecology and Obstetrics
+              Hospital No. 4 “Luis Castelazo Ayala”, Mexico City <br>
+              <strong><i>2009-2010.</i></strong> Social Service: Investigation in the Oncology Department. National
+              Institute of Medical Science and Nutrition Salvador Zubiran, Mexico City<br>
+              <strong><i>2011-2015.</i></strong> Internal Medicine Residency. National Autonomous University of Mexico.
+              National Institute of Medical Science and Nutrition Salvador Zubiran, Mexico City<br>
+              <strong><i>2014.</i></strong> Social Service in Internal Medicine. Bajio High Specialty Regional Hospital
+              (HRAEB). Leon, Guanajuato, Mexico<br>
+              <strong><i>2015-2018.</i></strong> Radiation Oncology Residency. National Autonomous University of Mexico.
+              National Cancer Institute, Mexico City<br>
+              <strong><i>2019-2020.</i></strong> Master in Molecular Oncology. Rey Juan Carlos University. Center for
+              Biosanitary Studies<br>
+              <strong><i>2019-2021.</i></strong> Master in Medical Science. National Autonomous University of Mexico.
+              National Cancer Institute, Mexico City<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container2" style="width: 100%; margin: 10px;">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Brachytherapy team
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>About us.</strong><br>
+              The National Cancer Institute Brachytherapy Division is one of the most experienced and advanced centers for intracavitary gynecologic brachytherapy (ICGBT) in the Mexico.<br>
+              It provides ICGBT mainly for cervical cancer, followed by endometrial cancer.<br>
+              It offers high-dose and low-dose rate ICGBT.<br><br>
+              <div class="card" style="width: 28rem;">
+                <img src="./images/incanedificio01.jpeg" class="card-img-top" alt="INCan photo">
+                <div class="card-body">
+                  <p class="card-text"> National Cancer Institure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Our Work
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/Video.png" class="card-img-top" alt="Brachytherapy video">
+                    <div class="card-body">
+                      <h5><a href="https://www.powtoon.com/w/cKbGwaqIiIa/1/m" class="card-title">Video</a></h5>
+                      <p class="card-text">This is video explains the brachytherapy procedure.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/Dyptch.jpg" class="card-img-top" alt="Dyptch showing brachytherapy procedure">
+                    <div class="card-body">
+                      <h5><a href="https://drive.google.com/file/d/1CLNe1jHqo4bZN5Oc7b1kwUP-GPMqdLRw/view?usp=sharing" class="card-title">Dyptch</a></h5>
+                      <p class="card-text">Dyptch with brachytherapy information.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/For patients.JPG" class="card-img-top" alt="Questionnaries for patients">
+                    <div class="card-body">
+                      <h5 class="card-title">Questionnaries</a></h5>
+                      <p class="card-text"><a href="https://forms.gle/cP98TfTGDFSRoMcq6">Symptoms daily checklist</a></p>
+                      <p class="card-text"><a href="https://forms.gle/XBa3KBwkVWXXZXCZA">Quality of life Questionnary</a></p>
+                      <p class="card-text"><a href="https://forms.gle/FbAQGDio2C9jiDPz8">Final satisfaction Questionnary</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/Commitment.JPG" class="card-img-top" alt="Commitment">
+                    <div class="card-body">
+                      <h5 class="card-title">Commitment</h5>
+                      <p class="card-text">These are some activities organized for patients.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Our team
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/Our team.JPG" class="card-img-top" alt="Brachytherapy team">
+                    <div class="card-body">
+                      <h5 class="card-title">Our team</a></h5>
+                      <p class="card-text">Meet our team.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assests/sidebars.js"></script>
+  <script src="./assests/script.js"></script>
+</body>
+
+</html>
