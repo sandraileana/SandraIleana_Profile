@@ -61,7 +61,7 @@
 
       <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
 
-        <li class="nav-item" id="AboutMe" onclick="myFunction1()">
+        <li class="nav-item" onclick="myFunction1()">
           <button type="button" id="AboutMeButton" class="nav-link active py-3 border-bottom" title="About me">
             <i class="fas fa-user-md fa-3x" width="40" height="32"></i>
             <!-- <svg class="bi" width="24" height="24">
@@ -70,14 +70,14 @@
           </button>
         </li>
 
-        <li>
-          <button type="button" id="MyWork" class="nav-link py-3 border-bottom" title="My Work">
+        <li class="nav-item" onclick="myFunction2()">
+          <button type="button" id="MyWorkButton" class="nav-link py-3 border-bottom" title="My Work">
             <i class="fas fa-radiation fa-3x" width="34" height="26"></i>
         </button>
         </li>
 
-        <li>
-          <button type="button" id="Coding" class="nav-link py-3 border-bottom" title="Coding">
+        <li class="nav-item" onclick="myFunction3()">
+          <button type="button" id="CodingButton" class="nav-link py-3 border-bottom" title="Coding">
             <i class="fas fa-code fa-2x" width="34" height="26"></i>
           </a>
         </li>
@@ -122,7 +122,7 @@
 
     <div class="b-example-divider"></div>
 
-    <div class="container" id="container1" class="container1 d-none" style="width: 90%; margin: 10px; display: block">
+    <div class="container" id="container1" class="container1 d-none" style="width: 90%; margin: 10px; display: none">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -210,16 +210,16 @@
       </div>
     </div>
 
-    <div class="container" id="container2" style="width: 90%; margin: 10px;">
+    <div class="container" id="container2" class="container2 d-none" style="width: 90%; margin: 10px; display: none">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+          <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
               aria-expanded="true" aria-controls="collapseFour">
               Brachytherapy team
             </button>
           </h2>
-          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <strong>About us.</strong><br>
@@ -236,13 +236,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+          <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               Our Work
             </button>
           </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -290,13 +290,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+          <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
               Our team
             </button>
           </h2>
-          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -316,16 +316,16 @@
       </div>
     </div>
 
-    <div class="container" id="container3" style="width: 90%; margin: 10px;">
+    <div class="container" id="container3" class="container3 d-none" style="width: 90%; margin: 10px; display: none">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+          <h2 class="accordion-header" id="headingSeven">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
               aria-expanded="true" aria-controls="collapseSeven">
               Daily Planner
             </button>
           </h2>
-          <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -344,13 +344,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+          <h2 class="accordion-header" id="headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
               Smart Weather Dashboard
             </button>
           </h2>
-          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -369,13 +369,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+          <h2 class="accordion-header" id="headingNine">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
               Project 1
             </button>
           </h2>
-          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -393,6 +393,33 @@
             </div>
           </div>
         </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              Project 1
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="./images/Project 1.png" class="card-img-top" alt="Image of MyBookCloud project">
+                    <div class="card-body">
+                      <h5 class="card-title">My Book Cloud</h5>
+                      <p class="card-text"><a href="https://enrique246.github.io/project1-mybookcloud/" target="_blank">Link to Github webpage</a></p>
+                      <p class="card-text"><a href="https://github.com/Enrique246/project1-mybookcloud.git" target="_blank">Link to Github repository</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
