@@ -1,12 +1,18 @@
+// $('#AboutMeButton').click(function () {
+//         $('#container1').show();
+//         $('#container2').hide();
+//         $('#container2').hide();
+//     });
+
 // $(document).ready(function () {
 //     $('#AboutMe').click(function () {
 //             $('#container').toggle();
 //         });
 //     })
 
-function myFunction(){
+function myFunction1(){
     var AboutMe = document.getElementById('container1');
-    if (AboutMe.style.display == 'none'){
+    if (AboutMe.style.display === 'none'){
         AboutMe.style.display = 'block';
     } else {
         AboutMe.style.display = 'none';
